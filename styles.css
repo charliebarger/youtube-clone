@@ -1,0 +1,45 @@
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0px;
+}
+header {
+  background: #212121;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0px 8px;
+}
+
+.nav-item {
+  width: 24px;
+  height: 24px;
+
+  fill: white;
+}
+
+.logo {
+  height: none;
+  width: 90px;
+  padding: 16px;
+}
+
+.user {
+  border-radius: 100px;
+  width: 32px;
+  height: 32px;
+}
+
+.hamburger {
+  padding: 8px;
+}
+
+nav {
+  margin-right: 20px;
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
