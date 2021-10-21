@@ -540,3 +540,19 @@ aside {
     padding: 0px 18px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .hamburger {
+    margin: 0 0;
+  }
+
+  .logo {
+    margin-left: 10px;
+    width: 80px;
+  }
+
+  nav > .nav-item {
+    width: 14px;
+    height: 14px;
+  }
+}
