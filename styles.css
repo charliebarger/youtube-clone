@@ -572,6 +572,11 @@ aside {
     width: 80px;
   }
 
+  .share-icon,
+  .save-icon {
+    display: none;
+  }
+
   nav > .nav-item {
     width: 14px;
     height: 14px;
