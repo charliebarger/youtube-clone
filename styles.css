@@ -581,4 +581,7 @@ aside {
     width: 14px;
     height: 14px;
   }
+  .body-wrap {
+    padding: 10px;
+  }
 }
