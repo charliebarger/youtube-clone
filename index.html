@@ -1,37 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header>
-        <svg viewBox="0 0 24 24" class="nav-item hamburger">
-          <use xlink:href="/images/navbar/hamburger.svg#hamburger"></use>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <svg viewBox="0 0 24 24" class="nav-item hamburger">
+      <use xlink:href="/images/navbar/hamburger.svg#hamburger"></use>
+    </svg>
+    <img src="./images/logo/youtube.svg" class="nav-item logo" />
+
+    <nav>
+      <div class="input-wrapper">
+        <input placeholder="Search">
+        <svg viewBox="0 0 24 24" class="nav-item">
+          <use xlink:href="/images/navbar/magnifying-glass.svg#magnify"></use>
         </svg>
-        <img src="./images/logo/youtube.svg" class="nav-item logo" />
-        <nav>
-          <svg viewBox="0 0 24 24" class="nav-item">
-            <use xlink:href="/images/navbar/magnifying-glass.svg#magnify"></use>
-          </svg>
-          <svg viewBox="0 0 24 24" class="nav-item">
-            <use xlink:href="/images/navbar/push.svg#push"></use>
-          </svg>
-          <svg viewBox="0 0 24 24" class="nav-item">
-            <use xlink:href="/images/navbar/camera.svg#camera"></use>
-          </svg>
-          <svg viewBox="0 0 24 24" class="nav-item">
-            <use xlink:href="/images/navbar/dot-grid.svg#dot-grid"></use>
-          </svg>
-          <svg viewBox="0 0 24 24" class="nav-item">
-            <use xlink:href="/images/navbar/bell.svg#bell"></use>
-          </svg>
-          <img src="./images/navbar/user.jpg" class="nav-item user" />
-        </nav>
-      </nav>
-    </header>
-  </body>
+      </div>
+      <div class="microphone">
+        <svg viewBox="0 0 24 24" class="nav-item">
+          <use xlink:href="/images/navbar/push.svg#push"></use>
+        </svg>
+      </div>
+      <svg viewBox="0 0 24 24" class="nav-item">
+        <use xlink:href="/images/navbar/camera.svg#camera"></use>
+      </svg>
+      <svg viewBox="0 0 24 24" class="nav-item">
+        <use xlink:href="/images/navbar/dot-grid.svg#dot-grid"></use>
+      </svg>
+      <svg viewBox="0 0 24 24" class="nav-item">
+        <use xlink:href="/images/navbar/bell.svg#bell"></use>
+      </svg>
+      <img src="./images/navbar/user.jpg" class="nav-item user" />
+    </nav>
+    </nav>
+  </header>
+  <div class="body-wrap">
+    <section class="video-section">
+      <figure class="video-figure">
+        <div class="video-wrapper">
+          <div class="padding-wrapper">
+            <iframe class="video" width="436" height="245" src="https://www.youtube.com/embed/CsGYh8AacgY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <section class="under-video">
+          <figcaption class="main-video-caption">
+            <h1>
+              Charlie the Unicorn
+            </h1>
+          </figcaption>
+          <div class="response-section">
+            <span class="views">37M</span>
+            <div class="like-section">
+              <figure class="icon-figure">
+                <svg viewBox="0 0 24 24" class="nav-item">
+                  <use xlink:href="/images/video-caption/like-button.svg#like"></use>
+                </svg>
+                <figcaption>312K</figcaption>
+              </figure>
+              <figure class="icon-figure">
+                <svg viewBox="0 0 24 24" class="nav-item">
+                  <use xlink:href="/images/video-caption/unlike-button.svg#unlike"></use>
+                </svg>
+                <figcaption>12K</figcaption>
+              </figure>
+              <figure class="icon-figure">
+                <svg viewBox="0 0 24 24" class="nav-item">
+                  <use xlink:href="/images/video-caption/share-icon.svg#share"></use>
+                </svg>
+                <figcaption>SHARE</figcaption>
+              </figure>
+              <figure class="icon-figure">
+                <svg viewBox="0 0 24 24" class="nav-item">
+                  <use xlink:href="/images/video-caption/save-icon.svg#save"></use>
+                </svg>
+                <figcaption>SAVE</figcaption>
+              </figure>
+              <svg viewBox="0 0 24 24" class="nav-item">
+                <use xlink:href="/images/video-caption/three-dots.svg#three-dots"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+      </figure>
+    </section>
+    <section class="profile-info">
+      <img src="./images/charlie/avi.jpg" class="avi" />
+      <div class="profile-name">
+        <span class="prof-name">FilmCow</span>
+        <span class="subscribers">1.77M subscribers</span>
+      </div>
+      <button class="sub-button">SUBSCRIBE</button>
+      <div class="video-info">
+        <p>Charlie's friends return to bring him on another magical adventure!</p>
+        <span>Mp3 of the song available on iTunes</span>
+      </div>
+    </section>
+    <aside class="suggested">
+      <div class="suggested-item">
+        <div class="thumbnail-wrapper">
+          <img src="./images/thumbnails/1.jpg" class="thumbnail">
+          <div class="test">
+            <div class="wrap-it">
+              <svg viewBox="0 0 24 24" class="nav-item thumbnail-hover">
+                <use xlink:href="/images/thumbnails/time.svg#time"></use>
+              </svg>
+            </div>
+            <div class="wrap-it">
+              <svg viewBox="0 0 24 24" class="nav-item thumbnail-hover">
+                <use xlink:href="/images/thumbnails/save.svg#save"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="time-stamp">2:00:01</div>
+        </div>
+        <div class="thumbnail-info">
+          <span class="suggested-title">Charlie the Unicorn 3</span>
+          <span class="little-font">FilmCow</span>
+          <div class="little-font suggested-sub">
+            <span>32M</span>
+            <span class="dot"> &#183 </span>
+            <span>12 years</span>
+          </div>
+        </div>
+        <svg viewBox="0 0 24 24" class="nav-item thumbnail-dots">
+          <use xlink:href="/images/thumbnails/three-dots.svg#three-dots"></use>
+        </svg>
+      </div>
+      <div class="suggested-item">
+        <div class="thumbnail-wrapper">
+          <img src="./images/thumbnails/2.jpg" class="thumbnail">
+          <div class="test">
+            <div class="wrap-it">
+              <svg viewBox="0 0 24 24" class="nav-item thumbnail-hover">
+                <use xlink:href="/images/thumbnails/time.svg#time"></use>
+              </svg>
+            </div>
+            <div class="wrap-it">
+              <svg viewBox="0 0 24 24" class="nav-item thumbnail-hover">
+                <use xlink:href="/images/thumbnails/save.svg#save"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="time-stamp">3:45</div>
+        </div>
+        <div class="thumbnail-info">
+          <span class="suggested-title">Roddy Ricch - Down Below </span>
+          <span class="little-font">Roddy Ricch</span>
+          <div class="little-font suggested-sub">
+            <span>280M</span>
+            <span class="dot"> &#183 </span>
+            <span>2 years"</span>
+          </div>
+        </div>
+        <svg viewBox="0 0 24 24" class="nav-item thumbnail-dots">
+          <use xlink:href="/images/thumbnails/three-dots.svg#three-dots"></use>
+        </svg>
+      </div>
+    </aside>
+  </div>
+</body>
+
 </html>
