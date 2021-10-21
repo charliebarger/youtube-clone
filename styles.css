@@ -4,9 +4,17 @@
   color: white;
 }
 
+:root {
+  --background-color: #181818;
+  --header-color: #212121;
+  --little-font: #aaa;
+  --neon-highlight: #3ea6ff;
+  --border-color: #323232;
+}
+
 body {
   margin: 0px;
-  background: #181818;
+  background: var(--background-color);
 }
 
 .body-wrap {
@@ -20,7 +28,7 @@ header {
   left: 0;
   right: 0;
   top: 0;
-  background: #212121;
+  background: var(--header-color);
   height: 56px;
   display: flex;
   align-items: center;
@@ -109,7 +117,7 @@ figure {
 }
 
 .video-figure {
-  border-bottom: #323232 solid 1px;
+  border-bottom: var(--border-color) solid 1px;
   padding-bottom: 18px;
 }
 
@@ -145,12 +153,12 @@ figure {
 }
 
 .views {
-  color: #aaa;
+  color: var(--little-font);
   font-size: 14px;
 }
 
 .profile-info {
-  border-bottom: #323232 solid 1px;
+  border-bottom: var(--border-color) solid 1px;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -179,7 +187,7 @@ figure {
 }
 
 .subscribers {
-  color: #aaa;
+  color: var(--little-font);
   font-size: 12px;
 }
 
@@ -232,7 +240,7 @@ aside {
 
 .little-font,
 .little-font > * {
-  color: #aaa;
+  color: var(--little-font);
   font-size: 12px;
 }
 
@@ -259,7 +267,7 @@ aside {
 }
 
 .wrap-it {
-  background: #181818;
+  background: var(--background-color);
   padding: 2.5px;
   border-radius: 2.5px;
 }
@@ -297,7 +305,7 @@ aside {
   position: absolute;
   bottom: 0;
   right: 0;
-  background: #181818;
+  background: var(--background-color);
   padding: 2.5px 5px;
   font-size: 13px;
   font-weight: 500;
@@ -310,8 +318,8 @@ aside {
   display: block;
   width: 100%;
   padding: 10px;
-  border: #3ea6ff solid 1px;
-  color: #3ea6ff;
+  border: var(--neon-highlight) solid 1px;
+  color: var(--neon-highlight);
   font-size: 14px;
 }
 
@@ -326,15 +334,15 @@ aside {
     align-items: center;
     height: 100%;
     border-radius: 2.5px;
-    background: #323232;
-    border: #323232 solid 1px;
+    background: var(--border-color);
+    border: var(--border-color) solid 1px;
     margin-left: auto;
   }
   .input-wrapper {
     margin-right: 5px;
   }
   .microphone {
-    background: #181818;
+    background: var(--background-color);
     height: 40px;
     width: 40px;
     display: flex;
@@ -349,7 +357,7 @@ aside {
     flex: 1;
     height: 100%;
     border-radius: 2.5px 0 0 2.5px;
-    background: #181818;
+    background: var(--background-color);
     outline: none;
     border: none;
     font-size: 16px;
@@ -405,12 +413,12 @@ aside {
   width: 100%;
   background: none;
   border: none;
-  border-bottom: #323232 solid 1px;
+  border-bottom: var(--border-color) solid 1px;
   margin-left: 15px;
   padding-bottom: 5px;
   font-size: 14px;
   outline: none;
-  color: #aaa;
+  color: var(--little-font);
 }
 
 .comment > img {
@@ -419,6 +427,7 @@ aside {
 }
 
 .user-comments {
+  position: relative;
   margin: 18px 0;
   display: flex;
   align-items: flex-start;
@@ -429,7 +438,7 @@ aside {
 }
 
 .comment-age {
-  color: #aaa;
+  color: var(--little-font);
   font-size: 12px;
 }
 
@@ -451,6 +460,10 @@ aside {
 }
 
 .user-comments:hover > .thumbnail-dots {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 0px;
   opacity: 1;
   transition: 0.25s ease-in-out;
 }
@@ -462,7 +475,7 @@ aside {
 }
 
 .comment-like > span {
-  color: #aaa;
+  color: var(--little-font);
   font-size: 12px;
 }
 
@@ -486,13 +499,13 @@ aside {
 }
 
 .comment-replys > svg {
-  fill: #3ea6ff;
+  fill: var(--neon-highlight);
   transform: rotate(180deg);
   margin-left: -3px;
 }
 
 .comment-replys > span {
-  color: #3ea6ff;
+  color: var(--neon-highlight);
   font-size: 14px;
   font-weight: 500;
 }
