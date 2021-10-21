@@ -304,6 +304,17 @@ aside {
   border-radius: 2.5px;
 }
 
+.show-more-button {
+  cursor: pointer;
+  background: none;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: #3ea6ff solid 1px;
+  color: #3ea6ff;
+  font-size: 14px;
+}
+
 @media screen and (min-width: 640px) {
   nav > * {
     margin: 0px 14px;
@@ -347,5 +358,47 @@ aside {
   }
   .input-wrapper > svg {
     margin: 20px;
+  }
+}
+
+.first-item-wrapper {
+  display: flex;
+}
+
+@media screen and (min-width: 950px) {
+  .body-wrap {
+    overflow: hidden;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 677px 1fr;
+    padding: 0px;
+  }
+  aside {
+    margin-right: 18px;
+    grid-column: 2;
+  }
+  .profile-info {
+    grid-column: 1;
+  }
+  .left-wrap {
+    padding: 18px;
+  }
+  .suggested-item:nth-of-type(1) {
+    padding-top: 0px;
+  }
+
+  .thumbnail-dots {
+    display: none;
+  }
+  .suggested-title {
+    margin-right: 15px;
+    line-height: 1.5em;
+    max-height: 3em; /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+  }
+
+  .suggested-sub > * {
+    display: inline-block;
+    white-space: nowrap;
   }
 }
