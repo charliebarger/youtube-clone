@@ -227,15 +227,23 @@ aside {
   transition: 0.25s ease-in-out;
 }
 
+.suggested-item {
+  position: relative;
+}
+
 .suggested-item:hover .test,
 .suggested-item:hover .thumbnail-dots {
   opacity: 1;
   transition: 0.25s ease-in-out;
 }
+.suggested-item > .thumbnail-dots {
+  margin: 0;
+}
 
 .thumbnail-info {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .little-font,
@@ -259,7 +267,7 @@ aside {
 
 .thumbnail-dots {
   opacity: 0;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .thumbnail-hover {
@@ -455,17 +463,17 @@ aside {
   flex-direction: column;
 }
 
-.user-comments > .thumbnail-dots {
+.thumbnail-dots {
   margin-top: 7px;
-}
-
-.user-comments:hover > .thumbnail-dots {
   position: absolute;
   top: 0;
   right: 0;
   margin-left: 0px;
-  opacity: 1;
   transition: 0.25s ease-in-out;
+}
+
+.user-comments:hover > .thumbnail-dots {
+  opacity: 1;
 }
 
 .comment-like {
