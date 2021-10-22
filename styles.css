@@ -577,7 +577,8 @@ aside {
     display: none;
   }
 
-  nav > .nav-item {
+  nav > .nav-item,
+  .shrink {
     width: 14px;
     height: 14px;
   }
